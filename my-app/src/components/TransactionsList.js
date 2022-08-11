@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Transaction from "./Transaction";
 
-function TransactionsList({ userEntry, filteredEntries }) {
+function TransactionsList() {
   return (
     <table className="ui celled striped padded table">
       <tbody>
@@ -19,18 +19,7 @@ function TransactionsList({ userEntry, filteredEntries }) {
             <h3 className="ui center aligned header">Amount</h3>
           </th>
         </tr>
-        {filteredEntries().map((entry) => (
-          <Transaction 
-            entry={userEntry}
-            key={entry.id}
-            id={entry.id}
-            date={entry.date}
-            description={entry.description}
-            category={entry.category}
-            amount={entry.amount}
-          /> 
-        ))
-      }
+        {/* {add your transaction component list here} */}
       </tbody>
     </table>
   );

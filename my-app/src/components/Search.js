@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 
-function Search({ term, setTerm}) {
+function Search() {
 
-  function handleSearchSubmit(event) {
-    console.log("Searching...");
-    setTerm(event.target.value);
-  }
 
 
   return (
@@ -13,8 +9,7 @@ function Search({ term, setTerm}) {
       <input
         type="text"
         placeholder="Search your Recent Transactions"
-        onChange={handleSearchSubmit}
-        value={term}
+        onChange={() => console.log("searching...")}
       />
       <i className="circular search link icon"></i>
     </div>
