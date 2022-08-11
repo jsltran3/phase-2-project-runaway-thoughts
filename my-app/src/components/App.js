@@ -1,6 +1,5 @@
 import React from "react"; 
 import { Route, Switch, useState } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
 import NavBar from "./components/Navbar.js";
 import Tasks from "./components/Tasks.js"; 
@@ -9,11 +8,12 @@ import SupportNetwork from "./components/SupportNetwork"
 import { CATEGORIES } from "./data";
 
 function App() {
+
   return (
     <div className="App">
       <NavBar />
       <Switch>
-      <Route exact path="/SupportNetwork">
+        <Route exact path="/SupportNetwork">
           <SupportNetwork />
         </Route>
         <Route exact path="/Tasks">
@@ -22,7 +22,6 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-
       </Switch>
 
     </div>

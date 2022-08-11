@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "react-router-dom": "5"
-  }
+  },
+  "name": "phase-2-project-runaway-thoughts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jsltran3/phase-2-project-runaway-thoughts.git",
+  "author": "Joseph <jsltran@gmail.com>",
+  "license": "MIT"
 }
